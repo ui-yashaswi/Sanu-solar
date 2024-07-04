@@ -1,5 +1,5 @@
 import React from 'react'
-import formImg from  "../../public/img-container/messages-image.png"
+import formImg from  "/img-container/messages-image.png"
 import { BsDashLg } from "react-icons/bs";
 import ContactForm from '../component/ContactForm';
 

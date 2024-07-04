@@ -5,6 +5,7 @@ import logo from "/img-container/logo.svg"
 function Nav() {
   return (
     <div className=" w-full h-44 bg-white bg-transparent  flex px-20 items-center ">
+
       <div className="flex gap-10 w-full h-full items-center justify-between pb-10  ">
         <div className="flex justify-center gap-2 items-center ">
           <img

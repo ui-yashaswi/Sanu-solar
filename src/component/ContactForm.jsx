@@ -41,7 +41,7 @@ const ContactForm = () => {
     >
       {({ isSubmitting, touched, errors, submitCount }) => (
         <Form className="space-y-4 py-2 flex flex-col">
-          <div className="flex justify-between gap-8">
+          <div className="flex justify-between gap-4 lg:flex-row flex-col lg:gap-8">
             <div className=" w-full">
               <Field
                 name="name"

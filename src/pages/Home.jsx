@@ -7,12 +7,18 @@ import { AiOutlineRightCircle } from "react-icons/ai";
 import { ImPower } from "react-icons/im";
 import panel from "/img-container/3-panels.png";
 import Nav from "./Nav";
+import NavSm from "./NavSm";
 
 function Home() {
   return (
-    <div className=" w-full h-full flex bg-black ">
+    <div className=" w-full h-full flex-col bg-black  ">
+
+      <div className="w-full h-20 z-30 fixed top-0 ">
+        <NavSm />
+      </div>
+
       <div
-        className="relative h-screen w-full bg-cover bg-center "
+        className="relative h-[100vh] lg:h-screen w-full bg-cover bg-fixed bg-center "
         style={{ backgroundImage: `url(${homeBg})` }}
       >
         <div className="absolute inset-0   bg-[#190b2f]  bg-opacity-80 flex items-center justify-center">
@@ -61,9 +67,9 @@ function Home() {
             </div>
           </div>
 
-          <div className="mt-60 w-full flex lg:flex-row flex-col justify-between lg:items-start items-center lg:px-40 px-[20px] ">
-            <div className="flex w-full flex-col gap-10">
-              <h1 className=" text-5xl  text-white font-bold leading-[70px] lg:text-left text-center ">
+          <div className="lg:mt-60 mb-18 lg:mb-0 w-full flex bg-pik-600 lg:flex-row flex-col-reverse  lg:items-start items-center lg:px-40 px-[20px] ">
+            <div className="flex w-full flex-col lg:items-start items-center gap-8 bg-gree-700 lg:gap-10">
+              <h1 className=" lg:text-5xl  text-4xl text-white font-bold lg:leading-[70px] leading-[50px] lg:text-left text-center ">
                 Renewable Energy Solutions that Deliver Financial Savings
               </h1>
 
@@ -71,17 +77,17 @@ function Home() {
                 Provide Solar Panels And Renewable Energy Products
               </h1>
 
-              <div className="flex gap-3  bg-orange-500 hover:bg-orange-800 text-white w-52 justify-center items-center py-3 rounded-full hover:border-2  hover:border-white text-xl ">
+              <div className="flex gap-3  bg-orange-500  text-white w-52 justify-center items-center py-3 rounded-full hover:border-2  hover:border-white text-xl ">
                 <button className=" font-semibold ">Enquire Online </button>
                 <AiOutlineRightCircle size={30} />
               </div>
             </div>
 
             <div className="relative w-full flex justify-end  text-orange-500">
-              <ImPower size={450} />
+              <ImPower size={450} className="lg:p-0 p-10" />
 
               <img
-                className="absolute w-80 right-10 top-3"
+                className="absolute w-52 lg:w-80 right-20 lg:right-10 top-16 lg:top-3"
                 src={panel}
                 alt=""
               />

@@ -16,7 +16,7 @@ function About() {
           <h1 className="text-5xl  font-bold text-slate-700 text-center capitalize">
             Project Supplier And Installer
           </h1>
-          <h1 className="text-slate-500 text-xl">
+          <h1 className="text-slate-500 text-xl text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
             labore.
           </h1>
@@ -24,7 +24,7 @@ function About() {
 
         <div className=" w-full flex lg:flex-row flex-col items-center lg:px-40 px-[20px]   pt-20 justify-between gap-20">
           <div className="flex  w-full gap-10 relative justify-end">
-            <div className="w-40 h-60 flex flex-col items-cener absolute  left-6  rounded-b-full border-t-4 border-[#ffffff] border-dashed bg-orange-500 pt-8  gap-4 px-5">
+            <div className="w-40 h-60 flex flex-col items-cener absolute  left-0  rounded-b-full border-t-4 border-[#ffffff] border-dashed bg-orange-500 pt-8  gap-4 px-5">
               <h1 className="text-white text-lg text-center font-semibold">
                 We Have Experience of
               </h1>

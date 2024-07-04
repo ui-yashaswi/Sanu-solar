@@ -1,12 +1,11 @@
-import React from "react";
-import { RiTeamFill } from "react-icons/ri";
-import TeamCard from "../component/TeamCard";
+import React from 'react'
+import ClientCard from '../component/ClientCard';
 
-function Team() {
+
+function Clients() {
   return (
     <div className="bg-slate-100 w-full h-full lg:px-40 px-[20px] flex flex-col justify-center items-center py-20">
       <div className="flex justify-center items-center  text-orange-500 gap-2">
-        <RiTeamFill size={20} />
         <h1 className=" font-medium uppercase tracking-widest ">Our Team</h1>
       </div>
 
@@ -18,15 +17,16 @@ function Team() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
           labore.
         </h1>
-      </div> 
+      </div>
 
-      <div className="flex pt-20 lg:flex-row flex-col gap-20 lg:justify-between ">
-        <TeamCard />
-        <TeamCard />
-        <TeamCard />
+      <div className="w-full h-full flex lg:flex-row flex-col bg-yllow-500 justify-between pt-20 lg:gap-16  gap-3  ">
+
+        <ClientCard/>
+        <ClientCard/>
+        <ClientCard/>
       </div>
     </div>
   );
 }
 
-export default Team;
+export default Clients
